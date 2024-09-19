@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Language Detector</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.12.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose"></script>
+  <style>
+    canvas {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sign Language Detector</h1>
+  <video id="video" width="640" height="480" autoplay muted></video>
+  <canvas id="canvas"></canvas>
+  <p id="gesture" style="font-size: 100px;"></p>
+
+  <script src="app.js"></script>
+</body>
+</html>
